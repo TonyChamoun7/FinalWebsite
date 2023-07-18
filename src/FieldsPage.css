@@ -1,0 +1,83 @@
+.field-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fields-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.field-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; 
+  overflow: hidden;
+}
+
+.field-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.field-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.field-name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.field-description {
+  margin-bottom: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.field-price {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  position: relative;
+}
+
+.field-filter {
+  padding: 5px 20px;
+  border: none;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.field-filter:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
